@@ -12,8 +12,8 @@ include_capital_letters = True
 include_special_chars = True
 include_io_mode = False
 
-display_width_in_px = 1440
-display_height_in_px = 900
+display_width_in_px = 1920
+display_height_in_px = 1080
 
 colors = (
 # * BASIC COLORS *
