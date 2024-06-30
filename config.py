@@ -15,18 +15,16 @@ include_io_mode = False
 display_width_in_px = 1440
 display_height_in_px = 900
 
-# all colors:
-# BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE
 colors = (
 # * BASIC COLORS *
 # Fore.BLACK,
 # Fore.RED,
-Fore.GREEN,
+# Fore.GREEN,
 # Fore.YELLOW,
 # Fore.BLUE,
 # Fore.MAGENTA,
 # Fore.CYAN,
-Fore.WHITE,
+# Fore.WHITE,
 
 # * LIGHT COLORS *
 # Fore.LIGHTBLACK_EX,
@@ -36,6 +34,5 @@ Fore.WHITE,
 # Fore.LIGHTBLUE_EX,
 # Fore.LIGHTMAGENTA_EX,
 # Fore.LIGHTCYAN_EX,
-Fore.LIGHTWHITE_EX,
-
+Fore.LIGHTWHITE_EX
 )
