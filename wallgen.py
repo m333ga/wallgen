@@ -1,8 +1,7 @@
 # import libs
 from random import choice
-import config
-from PIL import Image, ImageDraw, ImageFont
 from colorama import Fore
+import config
 
 # print intro
 symbols_pull_to_choise = ''.join([
