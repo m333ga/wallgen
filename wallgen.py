@@ -14,7 +14,6 @@ symbols_pull_to_choise = ''.join([
 
 symbols_pull = ''.join([choice(symbols_pull_to_choise) for symbol in range(10000)])
 symbol_color = ''.join([choice(config.colors) for symbol_color in range(len(symbols_pull))])
-print(symbol_color)
 
 for symbol in symbols_pull:
     print(choice(config.colors) + symbol, end='')
