@@ -1,4 +1,21 @@
-from colorama import Fore as text_color
+# import libs
+from random import choice
+import config
+from PIL import Image, ImageDraw, ImageFont
+from colorama import Fore
 
-with open('config.json', 'r') as json_file:
-    
+# print intro
+symbols_pull_to_choise = ''.join([
+    config.numbers if config.include_numbers else '',
+    config.letters if config.include_letters else '',
+    config.capital_letters if config.include_capital_letters else '',
+    config.special_chars if config.include_special_chars else '',
+    config.io_mode if config.include_io_mode else ''
+])
+
+symbols_pull = ''.join([choice(symbols_pull_to_choise) for symbol in range(1920)])
+symbol_color = config.colors[0]
+print(symbol_color)
+
+for symbol in range(config.display_width_in_px):
+    print(symbol_color + choice(symbols_pull_to_choise), end='')
