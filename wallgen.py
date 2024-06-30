@@ -13,9 +13,11 @@ symbols_pull_to_choise = ''.join([
     config.io_mode if config.include_io_mode else ''
 ])
 
-symbols_pull = ''.join([choice(symbols_pull_to_choise) for symbol in range(1920)])
-symbol_color = config.colors[0]
+symbols_pull = ''.join([choice(symbols_pull_to_choise) for symbol in range(10000)])
+symbol_color = ''.join([choice(config.colors) for symbol_color in range(len(symbols_pull))])
 print(symbol_color)
 
-for symbol in range(config.display_width_in_px):
-    print(symbol_color + choice(symbols_pull_to_choise), end='')
+for symbol in symbols_pull:
+    print(choice(config.colors) + symbol, end='')
+
+print()
